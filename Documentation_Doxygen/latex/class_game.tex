@@ -1,0 +1,92 @@
+\hypertarget{class_game}{}\doxysection{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+Crée une partie avec en attributs deux Joueurs (Humains ou Robots) ainsi qu\textquotesingle{}un nombre de rôles.  
+
+
+
+
+{\ttfamily \#include $<$game.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_a14e425b0fbdc83cb82be9f83b81ba150}{Game}} (\mbox{\hyperlink{class_player}{Player}} a\+Player1, \mbox{\hyperlink{class_player}{Player}} a\+Player2, int a\+Rounds)
+\begin{DoxyCompactList}\small\item\em Constructeur qui crée la partie avec deux joueurs et un nombre de rounds. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_aeae54227fc65f728b5a95a19fdc6f062}\label{class_game_aeae54227fc65f728b5a95a19fdc6f062}} 
+void \mbox{\hyperlink{class_game_aeae54227fc65f728b5a95a19fdc6f062}{Rounds}} ()
+\begin{DoxyCompactList}\small\item\em Méthode appelée à chaque round, destinée à comparer les coups de chaque joueur et attribuer les points en conséquence. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_a0c319b3fb6ce6ef52871e9e613ca3d68}\label{class_game_a0c319b3fb6ce6ef52871e9e613ca3d68}} 
+void \mbox{\hyperlink{class_game_a0c319b3fb6ce6ef52871e9e613ca3d68}{End}} ()
+\begin{DoxyCompactList}\small\item\em Méthode appelée lorsque tous les rounds sont finis et annonce le vainqueur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a4aed77d4828b88c59e4420105728f981}{Restart}} (std\+::string a\+Command)
+\begin{DoxyCompactList}\small\item\em Methode appelée après la méthode \mbox{\hyperlink{class_game_a0c319b3fb6ce6ef52871e9e613ca3d68}{End()}}, elle demande au joueur s\textquotesingle{}il veut relancer la partie, si non le programme se ferme. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_a3dc48007ff484a1ba705c7396fb39346}{get\+Rounds}} ()
+\begin{DoxyCompactList}\small\item\em Permet de retourner le nombre de Rounds, sert à savoir quand le nombre de rounds est atteint. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Crée une partie avec en attributs deux Joueurs (Humains ou Robots) ainsi qu\textquotesingle{}un nombre de rôles. 
+
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+27 septembre 2019 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_a14e425b0fbdc83cb82be9f83b81ba150}\label{class_game_a14e425b0fbdc83cb82be9f83b81ba150}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}}]{player1,  }\item[{\mbox{\hyperlink{class_player}{Player}}}]{player2,  }\item[{int}]{rounds }\end{DoxyParamCaption})}
+
+
+
+Constructeur qui crée la partie avec deux joueurs et un nombre de rounds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Deux} & joueurs \mbox{\hyperlink{class_player}{Player}} afin qu\textquotesingle{}ils s\textquotesingle{}affrontent et un int représentant le nombre de rounds \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_a3dc48007ff484a1ba705c7396fb39346}\label{class_game_a3dc48007ff484a1ba705c7396fb39346}} 
+\index{Game@{Game}!getRounds@{getRounds}}
+\index{getRounds@{getRounds}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getRounds()}{getRounds()}}
+{\footnotesize\ttfamily int Game\+::get\+Rounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Permet de retourner le nombre de Rounds, sert à savoir quand le nombre de rounds est atteint. 
+
+\begin{DoxyReturn}{Returns}
+Retourne le nombre de rounds de la partie en int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_a4aed77d4828b88c59e4420105728f981}\label{class_game_a4aed77d4828b88c59e4420105728f981}} 
+\index{Game@{Game}!Restart@{Restart}}
+\index{Restart@{Restart}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Restart()}{Restart()}}
+{\footnotesize\ttfamily void Game\+::\+Restart (\begin{DoxyParamCaption}\item[{std\+::string}]{a\+Command }\end{DoxyParamCaption})}
+
+
+
+Methode appelée après la méthode \mbox{\hyperlink{class_game_a0c319b3fb6ce6ef52871e9e613ca3d68}{End()}}, elle demande au joueur s\textquotesingle{}il veut relancer la partie, si non le programme se ferme. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em un} & std\+::string a\+Command, s\textquotesingle{}il vaut \textquotesingle{}r\textquotesingle{}, la partie se relance, sinon le programme se ferme \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/plato/\+Desktop/\+D\+U\+T/\+C\+P\+O3/\+Shifumi\+\_\+\+Code\+\_\+012/\+Shifumi\+\_\+\+Code/\mbox{\hyperlink{game_8h}{game.\+h}}\item 
+C\+:/\+Users/plato/\+Desktop/\+D\+U\+T/\+C\+P\+O3/\+Shifumi\+\_\+\+Code\+\_\+012/\+Shifumi\+\_\+\+Code/game.\+cpp\end{DoxyCompactItemize}
